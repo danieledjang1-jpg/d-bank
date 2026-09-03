@@ -1,0 +1,34 @@
+.receipt-card{
+    background:#fff;
+    width:90%;
+    max-width:480px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.receipt-icon{
+    font-size:70px;
+    color:#10B981;
+    margin-bottom:20px;
+}
+
+.receipt-details{
+    margin:25px 0;
+}
+
+.receipt-details div{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #E5E7EB;
+}
+
+.receipt-details span{
+    color:#6B7280;
+}
+
+.receipt-details strong{
+    color:#111827;
+}

@@ -1,0 +1,268 @@
+.cards-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.cards-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.cards-header h1 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.cards-header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.cards-header-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: #1E40AF;
+  font-size: 20px;
+}
+
+
+/* D-BANK CARD */
+
+.bank-card {
+  width: 100%;
+  max-width: 500px;
+  min-height: 290px;
+  margin-bottom: 25px;
+  padding: 28px;
+  border-radius: 22px;
+  background: #1E40AF;
+  color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.18);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-brand {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.card-chip {
+  margin-top: 35px;
+  font-size: 32px;
+}
+
+.card-number {
+  margin-top: 28px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: monospace;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.card-bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-bottom small {
+  font-size: 9px;
+  opacity: 0.75;
+}
+
+.card-bottom strong {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+
+/* STATUS */
+
+.card-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-dot.active {
+  background: #1E40AF;
+}
+
+.status-dot.frozen {
+  background: #64748b;
+}
+
+.card-status strong {
+  color: #0f172a;
+}
+
+.card-status p {
+  margin: 3px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+
+/* ACTIONS */
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.card-actions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 15px;
+  border: 1px solid #dbeafe;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #1E40AF;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card-actions button:hover {
+  background: #eff6ff;
+}
+
+.card-actions .freeze-card-btn {
+  background: #1E40AF;
+  color: #ffffff;
+  border-color: #1E40AF;
+}
+
+.card-actions .unfreeze-card-btn {
+  background: #64748b;
+  color: #ffffff;
+  border-color: #64748b;
+}
+
+
+/* INFORMATION */
+
+.card-information {
+  padding: 22px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.card-information h2 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.information-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.information-row:last-child {
+  border-bottom: none;
+}
+
+.information-row span {
+  color: #64748b;
+}
+
+.information-row strong {
+  color: #0f172a;
+  text-align: right;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .cards-page {
+    padding: 20px 15px;
+  }
+
+  .cards-header {
+    margin-bottom: 20px;
+  }
+
+  .bank-card {
+    min-height: 235px;
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .card-chip {
+    margin-top: 25px;
+  }
+
+  .card-number {
+    margin-top: 20px;
+    font-size: 17px;
+  }
+
+  .card-bottom {
+    margin-top: 25px;
+  }
+
+  .card-bottom strong {
+    font-size: 11px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .card-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .information-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .information-row strong {
+    text-align: left;
+  }
+
+}

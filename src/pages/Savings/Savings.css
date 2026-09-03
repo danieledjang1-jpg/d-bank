@@ -1,0 +1,613 @@
+/* .placeholder-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.placeholder-page h1 {
+  margin-bottom: 10px;
+}
+
+.placeholder-page p {
+  color: #666;
+} */
+
+
+
+
+
+
+
+
+
+.savings-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.savings-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 35px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.savings-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.savings-card h1 {
+  margin-bottom: 8px;
+}
+
+.savings-subtitle {
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.savings-card label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 18px;
+  font-weight: 600;
+}
+
+.savings-card input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.savings-card input:focus {
+  border-color: #2563eb;
+}
+
+.savings-goal-preview {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.savings-goal-preview > svg {
+  color: #2563eb;
+  font-size: 24px;
+}
+
+.savings-goal-preview div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.savings-goal-preview small {
+  color: #777;
+}
+
+.savings-goal-preview strong {
+  font-size: 16px;
+}
+
+.savings-goal-preview span {
+  color: #555;
+  font-size: 14px;
+}
+
+.savings-continue-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.savings-continue-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+.savings-error {
+  margin-top: 8px;
+  color: #d93025;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+
+.savings-confirmation {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.savings-confirmation h2 {
+  margin-bottom: 8px;
+}
+
+.savings-confirmation p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.confirmation-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 18px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.confirmation-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.confirmation-details small {
+  color: #777;
+}
+
+.confirmation-details strong {
+  color: #1E40AF;
+  font-size: 17px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cancel-savings-btn,
+.confirm-savings-btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-savings-btn {
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.confirm-savings-btn {
+  background: #1E40AF;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+.savings-success {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.savings-success h2 {
+  margin-bottom: 8px;
+  color: #1E40AF;
+}
+
+.savings-success p {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.savings-success strong,
+.savings-success span {
+  display: block;
+}
+
+.savings-success span {
+  margin-top: 5px;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+.savings-goals-section {
+  margin-top: 30px;
+}
+
+.savings-goals-section h2 {
+  margin-bottom: 16px;
+  color: #1E40AF;
+}
+
+.savings-goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.savings-goal-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: white;
+}
+
+.goal-card-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #1E40AF;
+  flex-shrink: 0;
+}
+
+.goal-card-info {
+  flex: 1;
+}
+
+.goal-card-info h3 {
+  margin: 0 0 5px;
+}
+
+.goal-card-info p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.goal-progress {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.goal-progress-bar {
+  height: 100%;
+  background: #1E40AF;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.goal-percentage {
+  font-weight: 700;
+  color: #1E40AF;
+}
+
+
+
+
+
+
+
+
+.add-money-btn {
+  margin-left: auto;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #1E40AF;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-money-btn:hover {
+  opacity: 0.9;
+}
+
+.add-money-panel {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.add-money-panel h3 {
+  margin-bottom: 8px;
+}
+
+.add-money-panel p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.add-money-panel input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+  font-size: 16px;
+  outline: none;
+}
+
+.add-money-panel input:focus {
+  border-color: #1E40AF;
+}
+
+.add-money-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cancel-money-btn,
+.confirm-money-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-money-btn {
+  background: white;
+  border: 1px solid #d1d5db;
+}
+
+.confirm-money-btn {
+  background: #1E40AF;
+  color: white;
+  border: none;
+}
+
+
+
+
+
+
+
+
+.savings-deposit-success {
+  margin-top: 20px;
+  padding: 28px 20px;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+}
+
+.success-check {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #1E40AF;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.savings-deposit-success h2 {
+  margin-bottom: 10px;
+  color: #1E40AF;
+}
+
+.savings-deposit-success p {
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.savings-deposit-success span {
+  display: block;
+  margin-bottom: 20px;
+  color: #64748b;
+}
+
+.success-done-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: #1E40AF;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.success-done-btn:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+.goal-completed-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #1E40AF;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.goal-completed-message {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #1E40AF;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+.view-goal-details-btn {
+  padding: 9px 12px;
+  border: 1px solid #1E40AF;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1E40AF;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-goal-details-btn:hover {
+  background: #eff6ff;
+}
+
+.savings-details-panel {
+  position: relative;
+  margin-top: 20px;
+  padding: 28px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.close-details-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  color: #64748b;
+  cursor: pointer;
+}
+
+.details-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #1E40AF;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.savings-details-panel h2 {
+  color: #0f172a;
+  margin-bottom: 5px;
+}
+
+.details-status {
+  color: #1E40AF;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.details-amount,
+.details-target,
+.details-remaining {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.details-amount span,
+.details-target span,
+.details-remaining span {
+  color: #64748b;
+}
+
+.details-amount strong,
+.details-target strong,
+.details-remaining strong {
+  color: #0f172a;
+}
+
+.details-progress {
+  height: 10px;
+  margin-top: 25px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #e2e8f0;
+}
+
+.details-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #1E40AF;
+}
+
+.details-percentage {
+  margin-top: 10px;
+  color: #1E40AF;
+  font-weight: 700;
+}
+
+.details-created {
+  margin-top: 20px;
+  color: #64748b;
+  font-size: 13px;
+}
